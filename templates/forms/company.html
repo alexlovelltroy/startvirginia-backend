@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="http://startvirginia.com/css/normalize.css">
+<link rel="stylesheet" href="http://startvirginia.com/css/main.css">
+
+<script type="text/javascript" src="//use.typekit.net/atg6dup.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<div class="company-form">
+
+<header>
+ Add Your Startup
+</header>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<form action="{{form_action}}" method="post">
+{% csrf_token %}
+{{ form }}
+<input type="submit"/>  
+</form>
+</div>

@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'backend.views.home', name='home'),
     # url(r'^backend/', include('backend.foo.urls')),
     (r'^apis/', include('apis.urls')),
+    (r'^forms/', include('forms.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

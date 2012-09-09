@@ -89,7 +89,7 @@ SECRET_KEY = '8wg1-md%idp06p7&0#(e-ftop1a-b4bh2!4w5_s0!8dei4$%u1'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-    'django.template.loaders.eggs.Loader',
+#    'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,6 +106,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    "/var/www/startvirginia/backend/templates/"
 )
 
 INSTALLED_APPS = (
@@ -120,6 +121,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     #'django.contrib.admindocs',
     'apis',
+    'forms',
 )
 
 # A sample logging configuration. The only tangible logging
